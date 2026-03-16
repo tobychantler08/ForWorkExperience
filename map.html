@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForWex | UK Placement Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.5.2/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">ForWex</div>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="placements.html">Placements</a>
+        <a href="map.html" aria-current="page">Map</a>
+      </nav>
+    </header>
+
+    <main class="container map-container">
+      <h1>Interactive UK Placement Map</h1>
+      <p>Zoom, rotate, and pan around the 3D UK map. Click a marker to open and highlight the placement in a new tab.</p>
+      <div id="map" aria-label="3D map of UK placement locations"></div>
+    </main>
+
+    <script src="https://unpkg.com/maplibre-gl@4.5.2/dist/maplibre-gl.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>

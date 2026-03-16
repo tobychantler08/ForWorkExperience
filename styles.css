@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f8fb;
+  --text: #1c2230;
+  --brand: #0d3b66;
+  --brand-light: #2a73b8;
+  --card: #ffffff;
+  --border: #d9e0ec;
+  --highlight: #fff1c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+nav a[aria-current="page"] {
+  color: var(--brand-light);
+}
+
+.container {
+  width: min(980px, 92vw);
+  margin: 1.6rem auto 2.4rem;
+}
+
+.hero {
+  background: linear-gradient(145deg, #ffffff, #eaf2ff);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--brand-light);
+  letter-spacing: 0.05em;
+}
+
+.signup-link {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.features {
+  margin-top: 1.4rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.feature-grid article,
+.placement-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.placement-card.highlight {
+  outline: 3px solid #f9cc48;
+  background: var(--highlight);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.button {
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: white;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.button.secondary {
+  background: #fff;
+  color: var(--brand);
+}
+
+.button.toggle[data-active="true"] {
+  background: #2f7d32;
+  border-color: #2f7d32;
+}
+
+.map-container {
+  width: min(1200px, 95vw);
+}
+
+#map {
+  height: 72vh;
+  min-height: 450px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}

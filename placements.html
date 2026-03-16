@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForWex | Placements</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">ForWex</div>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="placements.html" aria-current="page">Placements</a>
+        <a href="map.html">Map</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Available Work Experience Placements</h1>
+      <p>Use the buttons below to apply, find the placement on the map, and track your progress.</p>
+
+      <section id="deloitte-aspire" class="placement-card" tabindex="-1" aria-label="Deloitte ASPIRE programme placement">
+        <h2>Deloitte ASPIRE Programme (Year 12)</h2>
+        <ul>
+          <li><strong>Dates:</strong> 26–28 July 2026</li>
+          <li><strong>Location:</strong> New Street Square (1 &amp; 2 NSS) and 66 Shoe Lane, London</li>
+          <li><strong>Suitable for:</strong> Year 12 students</li>
+        </ul>
+
+        <div class="button-row">
+          <a class="button" href="https://www2.deloitte.com/uk/en/careers.html" target="_blank" rel="noopener noreferrer">Apply on Deloitte UK Careers</a>
+          <a class="button secondary" href="map.html?focus=deloitte-aspire">View location on map</a>
+          <button class="button toggle" type="button" data-state="applied">Mark as applied</button>
+          <button class="button toggle" type="button" data-state="accepted">Mark as accepted</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="placements.js"></script>
+  </body>
+</html>
